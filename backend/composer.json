@@ -1,0 +1,16 @@
+{
+    "name": "rafael.araujo/gradus",
+    "require": {
+        "slim/slim": "3.*",
+        "suin/json": "^1.2",
+        "paragonie/sodium_compat": "^1.16",
+        "firebase/php-jwt": "^5.4",
+        "tuupola/slim-jwt-auth": "^3.5",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App"
+        }
+    }
+}
