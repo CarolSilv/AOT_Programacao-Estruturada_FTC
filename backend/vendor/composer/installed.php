@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'b91d235a181703454eb4e07d473fe4097a7ad32e',
         'name' => 'rafael.araujo/gradus',
         'dev' => true,
     ),
@@ -140,12 +140,12 @@
             'dev_requirement' => false,
         ),
         'rafael.araujo/gradus' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'b91d235a181703454eb4e07d473fe4097a7ad32e',
             'dev_requirement' => false,
         ),
         'slim/slim' => array(

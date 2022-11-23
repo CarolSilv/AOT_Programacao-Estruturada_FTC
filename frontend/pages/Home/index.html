@@ -9,7 +9,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- SEU CSS -->
+
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../../css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="./Home.css">
+
   </head>
   <body>
     <div id="conteudo">
@@ -42,13 +46,33 @@
                           <div class="col">
                               <label class="text-white" for="nome_jogador"><b>Nome</b></label>
                               <input type="text" class="form-control text-center nome_jogador mb-3" placeholder="Insira seu nome" required>
-                              <button type="button" class="btn btn-success btn-lg btn-block">Enviar meu chute</button>
+                              <button type="button" class="btn btn-success btn-lg btn-block" onclick="inserirPalpiteNoBanco()">Enviar meu chute</button>
                           </div>
                       </div>
                 </form>
             </div>
             <div class="col">
-              2 of 2
+              <table id="example" class="table is-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011-04-25</td>
+                        <td>$320,800</td>
+                    </tr>
+            </table>
             </div>
           </div>
         </div>
@@ -61,7 +85,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <!-- Seu JS -->
+     <script src="../../assets/js/axios/axios.min.js"></script>
      <script src="../../../scripts/jquery-3.5.1.js"></script>
+     <script src="../../../scripts/jquery.dataTables.min.js"></script>
+     <script src="../../../scripts/dataTables.bootstrap4.min.js"></script>
+     <script src="../../assets/js/sweet_alert/sweetalert2@11.js"></script>
     <script src="./Home.js"></script>
     <!--  -->
   </body>
