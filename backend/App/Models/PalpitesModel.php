@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Model;
+namespace App\Models;
 
-final class PalpiteModel
+final class PalpitesModel
 {
     #INT
     private int $id;
@@ -36,7 +36,7 @@ final class PalpiteModel
         return $this -> selecao_br;
     }
 
-    public function setSelecaoBR(string $selecao_br): PalpiteModel
+    public function setSelecaoBR(string $selecao_br): PalpitesModel
     {
         $this -> selecao_br = $selecao_br;
         return $this;
@@ -49,7 +49,7 @@ final class PalpiteModel
         return $this -> placar_br;
     }
 
-    public function setPlacarBR(int $placar_br): PalpiteModel
+    public function setPlacarBR(int $placar_br): PalpitesModel
     {
         $this -> placar_br = $placar_br;
         return $this;
@@ -62,7 +62,7 @@ final class PalpiteModel
         return $this -> selecao_adv;
     }
 
-    public function setSelecaoAdv(string $selecao_adv): PalpiteModel
+    public function setSelecaoAdv(string $selecao_adv): PalpitesModel
     {
         $this -> selecao_adv = $selecao_adv;
         return $this;
@@ -75,7 +75,7 @@ final class PalpiteModel
         return $this -> placar_adv;
     }
 
-    public function setPlacarAdv(int $placar_adv): PalpiteModel
+    public function setPlacarAdv(int $placar_adv): PalpitesModel
     {
         $this -> placar_adv = $placar_adv;
         return $this;
@@ -88,7 +88,7 @@ final class PalpiteModel
         return $this -> nome_jogador;
     }
 
-    public function setNomeJogador(string $nome_jogador): PalpiteModel
+    public function setNomeJogador(string $nome_jogador): PalpitesModel
     {
         $this -> nome_jogador = $nome_jogador;
         return $this;

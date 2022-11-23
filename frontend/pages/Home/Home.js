@@ -1,7 +1,7 @@
 function inserirPalpiteNoBanco(){
     let brasil = document.querySelector(".selecao_brasil").value
     let placar_brasil = document.querySelector(".placar_brasil").value
-    let adversario = document.querySelector("selecao_adversaria").value
+    let adversario = document.querySelector(".selecao_adversaria").value
     let placar_adversario = document.querySelector(".placar_adversario").value
     let nome_jogador = document.querySelector(".nome_jogador").value
 
@@ -14,14 +14,19 @@ function inserirPalpiteNoBanco(){
     }
 
     if(placar_brasil != "" && adversario != "" && placar_adversario != "" && nome_jogador != ""){
-        console.log(palpites)
+        Swal.fire({
+            title: 'Sucesso!',
+            text: palpites,
+            icon: 'success',
+            confirmButtonText: 'Entendi'
+          })
     }
     else{
         Swal.fire({
             title: 'Error!',
-            text: 'Do you want to continue',
+            text: 'Preencha todos os campos!',
             icon: 'error',
-            confirmButtonText: 'Cool'
+            confirmButtonText: 'Entendi'
           })
     }
     

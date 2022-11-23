@@ -11,3 +11,5 @@ $dotenv->load();
 date_default_timezone_set('America/Sao_Paulo');
 
 require_once "App/Routes/index.php";
+
+// Por algum motivo a porta tava bichada e o caminho q tu abriu o servidor tbm tava errada tem q abrir dentro da pasta backend eu tinha feito isso aí por isso tentei abrir no app, entao minha porta ta com a porra aham KKKK deixa essa 669 q é sucesso kkkkkkk jesus, obrigada bem ♥♥♥d

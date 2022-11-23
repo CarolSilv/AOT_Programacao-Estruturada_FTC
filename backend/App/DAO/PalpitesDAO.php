@@ -3,10 +3,10 @@
 namespace App\DAO;
 
 use App\DAO\Conexao;
-use App\Model\PalpiteModel;
+use App\Models\PalpitesModel;
 use PDO;
 
-class PalpiteDAO extends Conexao
+class PalpitesDAO extends Conexao
 {
     public function __construct()
     {
@@ -31,7 +31,7 @@ class PalpiteDAO extends Conexao
         return $palpites;
     }
 
-    public function insertChute(PalpiteModel $cadastro_bolao): void
+    public function insertChute(PalpitesModel $cadastro_bolao): void
     {
         $statement = $this->pdo
             ->prepare(

@@ -4,15 +4,15 @@ namespace App\Controllers;
 
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
-use App\DAO\PalpiteDAO;
-use App\Models\PalpiteModel;
+use App\DAO\PalpitesDAO;
+use App\Models\PalpitesModel;
 
-    final class PalpiteController
+    final class PalpitesController
     {
 
         public function getChutes(Request $request, Response $response, array $args): Response
         {
-            $palpiteDAO = new PalpiteDAO();
+            $palpiteDAO = new PalpitesDAO();
             $chute = $palpiteDAO -> buscarChute();
             $response = $response -> withJson($chute);
             return $response;
@@ -28,8 +28,8 @@ use App\Models\PalpiteModel;
             $placar_adversario = $data['placar_adversario'];
             $nome_apostador = $data['nome_apostador'];
 
-            $palpiteDAO = new PalpiteDAO();
-            $cadastro_bolao = new PalpiteModel;
+            $palpiteDAO = new PalpitesDAO();
+            $cadastro_bolao = new PalpitesModel;
             $cadastro_bolao ->getSelecaoBR($time_brasileiro);
             $cadastro_bolao ->setPlacarBR($placar_brasil);
             $cadastro_bolao ->setSelecaoAdv($time_adversario);
