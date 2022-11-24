@@ -16,7 +16,7 @@ function inserirPalpiteNoBanco(){
     if(placar_brasil != "" && adversario != "" && placar_adversario != "" && nome_jogador != ""){
         Swal.fire({
             title: 'Sucesso!',
-            text: palpites,
+            text: 'Palpite computado!',
             icon: 'success',
             confirmButtonText: 'Entendi'
           })
@@ -32,21 +32,21 @@ function inserirPalpiteNoBanco(){
     
 }
 
-$(document).ready(function () {
-    $('#example').DataTable({
-        language: {
-            emptyTable: "Nenhum registro encontrado",
-            info: "Mostrando de _START_ até _END_ de _TOTAL_ registros",
-            infoFiltered: "(Filtrados de _MAX_ registros)",
-            infoThousands: ".",
-            loadingRecords: "Carregando...",
-            zeroRecords: "Nenhum registro encontrado",
-            search: "Pesquisar",
-            "paginate": {
-                "next": "Próximo",
-                "previous": "Anterior",
-                "first": "Primeiro",
-                "last": "Último"
-        }}
-    });
-});
+// $(document).ready(function () {
+//     $('#example').DataTable({
+//         language: {
+//             emptyTable: "Nenhum registro encontrado",
+//             info: "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+//             infoFiltered: "(Filtrados de _MAX_ registros)",
+//             infoThousands: ".",
+//             loadingRecords: "Carregando...",
+//             zeroRecords: "Nenhum registro encontrado",
+//             search: "Pesquisar",
+//             "paginate": {
+//                 "next": "Próximo",
+//                 "previous": "Anterior",
+//                 "first": "Primeiro",
+//                 "last": "Último"
+//         }}
+//     });
+// });
